@@ -1,0 +1,22 @@
+/* GLOBAL */
+@import "global/fonts.scss";
+@import "global/global.scss";
+@import "global/variables.scss";
+@import "global/visually-hidden.scss";
+
+/* MIXINS */
+@import "mixins/mixins.scss";
+
+/* BLOCKS */
+@import "blocks/page.scss";
+@import "blocks/header.scss";
+@import "blocks/main.scss";
+@import "blocks/main-hero.scss";
+@import "blocks/hero.scss";
+@import "blocks/content.scss";
+@import "blocks/navigation.scss";
+@import "blocks/about.scss";
+@import "blocks/projects.scss";
+@import "blocks/project.scss";
+@import "blocks/contacts.scss";
+@import "blocks/content.scss";

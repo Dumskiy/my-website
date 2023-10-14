@@ -1,0 +1,17 @@
+.content__container {
+  @include tablet {
+    padding: 0 15%;
+  }
+}
+
+.content__title {
+  font-size: 40px;
+  line-height: 140%;
+  font-weight: 700;
+  margin: 0 0 4vh;
+  display: block;
+
+  @include mobile-only {
+    font-size: 30px;
+  }
+}

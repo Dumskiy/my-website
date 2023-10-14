@@ -1,0 +1,30 @@
+.projects__list {
+  @include clear-list;
+  display: grid;
+  row-gap: 12vh;
+}
+
+.projects__link {
+  text-decoration: none;
+  display: block;
+
+  &:hover {
+    transform: translateX(40px);
+    transition: all .5s;
+  }
+}
+
+.projects__title {
+  margin: 0;
+  font-size: 2.222em;
+  line-height: 140%;
+  font-weight: 700;
+  color: $white;
+}
+
+.projects__description {
+  margin: 0;
+  font-size: 16px;
+  line-height: 170%;
+  color: $red-10;
+}

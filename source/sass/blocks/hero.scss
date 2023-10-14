@@ -1,0 +1,38 @@
+.hero__container {
+  margin-bottom: 24vh;
+}
+
+.hero__title {
+  font-size: 2.222em;
+  line-height: 140%;
+  font-weight: 700;
+  margin: 0;
+
+  @include mobile-only {
+    font-size: 2em;
+  }
+
+  @include tablet {
+    letter-spacing: -3px;
+  }
+
+  &--black {
+    margin-bottom: 10px;
+  }
+}
+
+.hero__tagline {
+  font-size: 20px;
+  line-height: 180%;
+  margin: 0 0 30vh;
+  color: $gray-10;
+}
+
+.hero__image {
+  height: auto;
+  width: calc(100% + ((100vw - 100%) / 2));
+
+  @include laptop {
+    width: calc(100% + ((100vw - 17px - 100%) / 2));
+  }
+}

@@ -1,0 +1,8 @@
+@mixin container {
+  margin: 0 auto;
+  max-width: 86%;
+
+  @include tablet {
+    max-width: 21.5em;
+  }
+}
