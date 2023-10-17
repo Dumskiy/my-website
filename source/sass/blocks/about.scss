@@ -18,7 +18,8 @@
   line-height: 19px;
   display: block;
 
-  &:hover {
+  &:hover,
+  &:focus {
     transform: translateX(40px);
     transition: all .5s;
   }

@@ -43,7 +43,8 @@
     display: none;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     transform: translateX(40px);
     transition: all .5s;
 

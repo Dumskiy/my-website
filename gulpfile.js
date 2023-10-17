@@ -20,7 +20,7 @@ const sass = gulpSass(dartSass);
 let isDevelopment = true;
 
 export function processMarkup () {
-  return gulp.src('source/*.html')
+  return gulp.src('source/**/*.html')
     .pipe(gulp.dest('build'));
 }
 
@@ -88,6 +88,7 @@ export function copyAssets () {
     'source/*.ico',
     'source/*.webmanifest',
     'source/vendor/**/*.{css,js,map}',
+    'source/files/*.pdf',
   ], {
     base: 'source'
   })
@@ -114,7 +115,7 @@ function reloadServer (done) {
 function watchFiles () {
   gulp.watch('source/sass/**/*.scss', gulp.series(processStyles));
   gulp.watch('source/js/script.js', gulp.series(processScripts));
-  gulp.watch('source/*.html', gulp.series(processMarkup, reloadServer));
+  gulp.watch('source/**/*.html', gulp.series(processMarkup, reloadServer));
 }
 
 function compileProject (done) {

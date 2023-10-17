@@ -20,7 +20,8 @@
 }
 
 .header__link {
-  display: block;
+  display: flex;
+  column-gap: 10px;
   font-size: 20px;
   line-height: 20px;
   font-weight: 700;
@@ -35,6 +36,36 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-color: $white;
+    mask-image: url("../../img/icons/stack.svg#arrow-back");
+  }
+
+  &::before {
+    display: none;
+  }
+
+  @include laptop {
+    display: block;
+
+    &::before {
+      display: block;
+    }
+
+    span {
+      display: none;
+    }
+
+    &:hover,
+    &:focus {
+      display: flex;
+
+      &::before {
+        display: none;
+      }
+
+      span {
+        display: block;
+      }
+    }
   }
 
   &--black {
@@ -69,24 +100,21 @@
     }
   }
 
-  span {
-    display: none;
+  &--kekstagram {
+    &::before {
+      content: "Kekstagram";
+    }
   }
 
-  &:hover {
-    display: flex;
-    column-gap: 10px;
-
+  &--drink2go {
     &::before {
-      display: none;
+      content: "Drink2Go";
     }
+  }
 
-    &::after {
-      mask-image: url("../../img/icons/stack.svg#arrow-back");
-    }
-
-    span {
-      display: block;
+  &--sedona {
+    &::before {
+      content: "Sedona";
     }
   }
 }

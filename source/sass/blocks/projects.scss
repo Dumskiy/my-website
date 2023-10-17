@@ -8,7 +8,8 @@
   text-decoration: none;
   display: block;
 
-  &:hover {
+  &:hover,
+  &:focus {
     transform: translateX(40px);
     transition: all .5s;
   }
