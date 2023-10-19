@@ -10,6 +10,7 @@
     <!-- <link rel="manifest" href="manifest.webmanifest"> -->
     <!-- <link rel="preload" href="fonts/Montserrat-400.woff2" as="font"> -->
     <!-- <link rel="preload" href="../css/style.css" as="style"> -->
+    <link rel="stylesheet" href="../vendor/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
   </head>
   <body class="page__body page__body--white">
@@ -38,22 +39,89 @@
             </div>
           </div>
         </section>
-        <section class="project content">
-          <div class="project__container content__container">
-            <h2 class="project__title content__title">Интернет-магазин Cat Energy</h2>
+        <section class="project">
+          <div class="project__container">
+            <h2 class="project__title">Интернет-магазин Cat Energy</h2>
             <p class="project__description">
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету? Необходимо заработать авторитет среди дворовых котов и даже собак? Cat Energy поможет подобрать и заказать подходящую систему функиционального питания вашему коту для сброса лишнего веса или набора мышечной массы.
             </p>
-          </div>
-        </section>
-        <section class="technologies content">
-          <div class="technologies__container content__container">
-            <h2 class="technologies__title content__title">Технические особенности</h2>
+            <a class="project__link project__link--site" href="">Сайт Cat Energy</a>
+            <a class="project__link project__link--github" href="">Репозиторий на GitHub</a>
+            <h2 class="project__title">Технические особенности</h2>
+            <p class="project__text">
+              Дизайн макета выглядел минималистичным, но сверстать не перегруженный и информативный интерфейс, как оказалось - не такая простая задача, как казалось на первый взгляд.
+            </p>
+            <h3 class="project__subtitle">Адаптивная верстка</h3>
+            <p class="project__text">
+              Сайт состоит из
+            </p>
+            <!-- <picture>
+              <source type="image/webp"
+                srcset="../img/cat-energy-devices@1x.webp 1x, ../img/cat-energy-devices@2x.webp 2x">
+              <img class="project__image" src="../img/cat-energy-devices@1x.jpg"
+                srcset="../img/cat-energy-devices@2x.jpg 2x" width="1440" height="1224" alt="Страница сайта Кэт Энерджи на трех устройствах. Смартфон, планшет, компьютер.">
+            </picture> -->
 
+            <div class="project__slider slider carousel slide" id="carouselExampleIndicators" data-bs-ride="true">
+              <div class="slider__indicators carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="slider__inner carousel-inner">
+                <div class="slider__item carousel-item active">
+                  <picture>
+                    <source type="image/webp"
+                      srcset="../img/cat-energy-devices@1x.webp 1x, ../img/cat-energy-devices@2x.webp 2x">
+                    <img class="slider__image d-block w-100" src="../img/cat-energy-devices@1x.jpg"
+                      srcset="../img/cat-energy-devices@2x.jpg 2x" width="1440" height="1224" alt="Страница сайта Кэт Энерджи на трех устройствах. Смартфон, планшет, компьютер.">
+                  </picture>
+                </div>
+                <div class="slider__item carousel-item">
+                  <picture>
+                    <source type="image/webp"
+                      srcset="../img/kekstagram-devices@1x.webp 1x, ../img/kekstagram-devices@2x.webp 2x">
+                    <img class="slider__image d-block w-100" src="../img/kekstagram-devices@1x.png"
+                      srcset="../img/kekstagram-devices@2x.jpg 2x" width="1440" height="1224" alt="Страница сайта Кэт Энерджи на трех устройствах. Смартфон, планшет, компьютер.">
+                  </picture>
+                </div>
+                <div class="slider__item carousel-item">
+                  <picture>
+                    <source type="image/webp"
+                      srcset="../img/drink2go-devices@1x.webp 1x, ../img/drink2go-devices@2x.webp 2x">
+                    <img class="slider__image d-block w-100" src="../img/drink2go-devices@1x.png"
+                      srcset="../img/drink2go-devices@2x.jpg 2x" width="1440" height="1224" alt="Страница сайта Кэт Энерджи на трех устройствах. Смартфон, планшет, компьютер.">
+                  </picture>
+                </div>
+              </div>
+              <button class="slider__button slider__button--prev carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="slider__button slider__button--next carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <h3 class="project__subtitle">Адаптивная графика</h3>
+            <p class="project__text"></p>
+            <h3 class="project__subtitle">Ретинизация</h3>
+            <p class="project__text"></p>
+            <h3 class="project__subtitle">Страницы</h3>
+            <p class="project__text"></p>
+            <h3 class="project__subtitle">Мобильное меню</h3>
+            <p class="project__text"></p>
+            <h3 class="project__subtitle">Кросбраузерность</h3>
+            <p class="project__text"></p>
+            <h3 class="project__subtitle">Pixel Perfect</h3>
+            <p class="project__text"></p>
           </div>
         </section>
 
       </div>
     </main>
+
+    <script src="../vendor/bootstrap/bootstrap.bundle.min.js"></script>
   </body>
 </html>
