@@ -8,7 +8,7 @@
   font-size: 40px;
   line-height: 140%;
   font-weight: 700;
-  margin: 0 0 4vh;
+  margin: 0 0 3vh;
   display: block;
 
   @include mobile-only {
@@ -20,7 +20,7 @@
   font-size: 35px;
   line-height: 130%;
   font-weight: 700;
-  margin: 0 0 4vh;
+  margin: 4vh 0 2vh;
   display: block;
 
   @include mobile-only {
@@ -37,7 +37,7 @@
 .project__text {
   font-size: 18px;
   line-height: 170%;
-  margin: 0 0 3vh;
+  margin: 0 0 2vh;
 }
 
 .project__slider {
@@ -50,6 +50,10 @@
     max-width: 21.5em;
     margin-left: -3.22em;
   }
+
+  &--nojs {
+    display: none;
+  }
 }
 
 .project__image {
@@ -58,11 +62,19 @@
   height: auto;
   max-height: 90vh;
   object-fit: contain;
-  margin: 0 0 4vh;
+  margin: 0 auto 4vh;
 
-  @include tablet {
-    max-width: 21.5em;
-    margin-left: -3.22em;
+  &--large {
+    display: none;
+
+    @include tablet {
+      max-width: 21.5em;
+      margin-left: -3.22em;
+    }
+  }
+
+  &--nojs {
+    display: block;
   }
 }
 
