@@ -1,19 +1,30 @@
 .navigation__list {
   @include clear-list;
-  display: grid;
-  row-gap: 30px;
+}
+
+.navigation__item {
+  overflow: hidden;
+
+  &:nth-child(2) a {
+    animation-delay: .4s;
+  }
+
+  &:nth-child(3) a {
+    animation-delay: .8s;
+  }
 }
 
 .navigation__link {
-  font-size: 120px;
-  line-height: 120px;
+  @include float-up;
+  font-size: 2.5em;
+  line-height: 130%;
   font-weight: 700;
   text-decoration: none;
-  color: $white;
+  color: $red-10;
   display: flex;
 
-  &--red {
-    color: $red-10;
+  &--white {
+    color: $white;
   }
 
   &::after {
@@ -47,6 +58,19 @@
   &:focus {
     transform: translateX(40px);
     transition: all .5s;
+
+    span {
+      display: block;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &--nojs {
+    font-size: 2em;
+    line-height: 120%;
 
     span {
       display: block;

@@ -14,12 +14,14 @@
   width: max-content;
   margin: 0 -5% 0 auto;
 
+
   @include laptop {
     margin-right: -13%;
   }
 }
 
 .header__link {
+  @include float-up;
   display: flex;
   column-gap: 10px;
   font-size: 20px;

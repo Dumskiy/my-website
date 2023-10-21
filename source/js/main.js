@@ -1,3 +1,4 @@
-import { removeClassNojs } from './remove-class-nojs.js';
+import { initRemoveClassNojs } from './remove-class-nojs.js';
+import './tap-mobile.js';
 
-removeClassNojs();
+initRemoveClassNojs();

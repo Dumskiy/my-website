@@ -1,0 +1,34 @@
+.acquaintance {
+  margin: 0;
+  font-size: 2.5em;
+  line-height: 130%;
+  font-weight: 700;
+
+  &--nojs {
+    font-size: 2em;
+    line-height: 120%;
+  }
+}
+
+.acquaintance__text {
+  overflow: hidden;
+  color: $red-10;
+
+  &--white {
+    color: $white;
+  }
+
+  span {
+    @include float-up;
+    display: block;
+
+  }
+
+  &:nth-child(2) span {
+    animation-delay: .4s;
+  }
+
+  &:nth-child(3) span {
+    animation-delay: .8s;
+  }
+}

@@ -1,11 +1,21 @@
-const projectSlider = document.querySelector('.project__slider');
-const projectImages = document.querySelectorAll('.project__image--large');
+const ELEMENTS = [
+  "project__slider",
+  "project__image",
+  "navigation__link",
+  "major-hero__acquaintance"
+];
 
-export const removeClassNojs = () => {
-  projectSlider.classList.remove('project__slider--nojs');
+export const initRemoveClassNojs = () => {
+  removeClassNojs(ELEMENTS);
+}
 
-  projectImages.forEach(image => {
-    debugger;
-    image.classList.remove('project__image--nojs');
+const removeClassNojs = (array) => {
+
+  array.forEach(element => {
+    const elementsNojs = document.querySelectorAll(`.${element}--nojs`);
+
+    elementsNojs.forEach(elementNojs => {
+      elementNojs.classList.remove(`${element}--nojs`);
+    });
   });
 }

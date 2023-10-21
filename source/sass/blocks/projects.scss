@@ -4,7 +4,24 @@
   row-gap: 12vh;
 }
 
+.projects__item {
+  overflow: hidden;
+
+  &:nth-child(2) a {
+    animation-delay: .4s;
+  }
+
+  &:nth-child(3) a {
+    animation-delay: .8s;
+  }
+
+  &:nth-child(4) a {
+    animation-delay: .12s;
+  }
+}
+
 .projects__link {
+  @include float-up;
   text-decoration: none;
   display: block;
 

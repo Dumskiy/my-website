@@ -1,5 +1,6 @@
 /* GLOBAL */
 @import "global/fonts.scss";
+@import "global/animate.scss";
 @import "global/global.scss";
 @import "global/variables.scss";
 @import "global/visually-hidden.scss";
@@ -11,7 +12,8 @@
 @import "blocks/page.scss";
 @import "blocks/header.scss";
 @import "blocks/main.scss";
-@import "blocks/main-hero.scss";
+@import "blocks/major-hero.scss";
+@import "blocks/acquaintance.scss";
 @import "blocks/hero.scss";
 @import "blocks/content.scss";
 @import "blocks/navigation.scss";

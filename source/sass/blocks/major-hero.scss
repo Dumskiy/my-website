@@ -1,0 +1,76 @@
+.major-hero {
+  position: relative;
+
+  &::before {
+    @include scale;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 65%;
+    top: 0;
+    left: 35%;
+    background: url("../../img/DejanHome.png") no-repeat center / cover;
+  }
+
+  &::after {
+    @include bounce;
+    content: "Tap anywhere";
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 30px;
+    bottom: 4%;
+    left: 0;
+    font-size: 0.7em;
+    text-align: center;
+
+    @include laptop {
+      display: none;
+    }
+  }
+}
+
+.major-hero__container {
+  @include container;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6vh;
+}
+
+.major-hero__acquaintance {
+  margin: 0;
+  display: block;
+
+  @include laptop {
+    display: none;
+  }
+
+  &--nojs {
+    display: block;
+  }
+}
+
+.major-hero__navigation {
+  display: none;
+
+  @include laptop {
+    display: block;
+  }
+
+  // &--active {
+  //   display: block;
+
+  //   a {
+  //     span {
+  //       display: block;
+  //     }
+
+  //     &::after {
+  //       display: none;
+  //     }
+  //   }
+  // }
+}
