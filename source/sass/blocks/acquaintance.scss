@@ -4,9 +4,23 @@
   line-height: 130%;
   font-weight: 700;
 
+  @include laptop {
+    display: none;
+  }
+
   &--nojs {
     font-size: 2em;
     line-height: 120%;
+  }
+
+  @include touch-screen {
+    &--show {
+      display: block;
+    }
+
+    &--hidden {
+      display: none;
+    }
   }
 }
 

@@ -1,3 +1,50 @@
+.navigation {
+  display: none;
+  font-size: 2.5em;
+  line-height: 130%;
+  font-weight: 700;
+
+  @include laptop {
+    display: block;
+  }
+
+  @include touch-screen {
+    &--nojs {
+      display: block;
+      font-size: 2em;
+      line-height: 120%;
+
+      a {
+        span {
+          display: block;
+        }
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    &--show {
+      display: block;
+
+      a {
+        span {
+          display: block;
+        }
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    &--hidden {
+      display: none;
+    }
+  }
+}
+
 .navigation__list {
   @include clear-list;
 }
@@ -16,9 +63,6 @@
 
 .navigation__link {
   @include float-up;
-  font-size: 2.5em;
-  line-height: 130%;
-  font-weight: 700;
   text-decoration: none;
   color: $red-10;
   display: flex;
@@ -58,19 +102,6 @@
   &:focus {
     transform: translateX(40px);
     transition: all .5s;
-
-    span {
-      display: block;
-    }
-
-    &::after {
-      display: none;
-    }
-  }
-
-  &--nojs {
-    font-size: 2em;
-    line-height: 120%;
 
     span {
       display: block;

@@ -1,38 +1,25 @@
 
 const elementTap = document.querySelector('.major-hero');
-// const elementAcquaintance = elementTap.querySelector('.major-hero__acquaintance');
-// const elementNavigation = elementTap.querySelector('.major-hero__navigation');
 
 const ELEMENTS = [
-  "major-hero__acquaintance",
-  "major-hero__navigation"
+  "acquaintance",
+  "navigation"
 ];
 
 const switchBloks = () => {
   ELEMENTS.forEach(element => {
     const currentElements = elementTap.querySelector(`.${element}`);
-
-    if (currentElements.style.display === 'block') {
-      currentElements.style.display = '';
-    } else if (currentElements.style.display === '') {
-      currentElements.style.display = 'block';
+    if (currentElements.classList.contains(`${element}--show`)) {
+      currentElements.classList.remove(`${element}--show`);
+      currentElements.classList.add(`${element}--hidden`);
+    } else if (currentElements.classList.contains(`${element}--hidden`)) {
+      currentElements.classList.remove(`${element}--hidden`);
+      currentElements.classList.add(`${element}--show`);
     }
   });
-
-
-
-  // if (elementNavigation.classList.contains('major-hero__navigation--active')) {
-  //   elementNavigation.classList.remove('major-hero__navigation--active');
-  //   elementAcquaintance.classList.add('major-hero__acquaintance--active');
-  // } else {
-  //   elementNavigation.classList.add('major-hero__navigation--active');
-  //   elementAcquaintance.classList.remove('major-hero__acquaintance--active');
-  // }
 };
 
 
-if (window.innerWidth <= 768) {
+if (document.documentElement.clientWidth < 1024) {
   elementTap.addEventListener('click', switchBloks);
-} else {
-  elementTap.removeEventListener('click', switchBloks);
 }

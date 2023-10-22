@@ -1,3 +1,9 @@
+@mixin touch-screen {
+  @media (max-width: $tablet-max) {
+    @content;
+  }
+}
+
 @mixin mobile-only {
   @media (max-width: $mobile-max) {
     @content;

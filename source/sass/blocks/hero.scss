@@ -24,6 +24,10 @@
     display: block;
     @include float-up;
   }
+
+  &--margin-b {
+    margin: 0 0 20vh;
+  }
 }
 
 .hero__tagline {

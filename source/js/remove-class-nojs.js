@@ -1,8 +1,8 @@
 const ELEMENTS = [
   "project__slider",
   "project__image",
-  "navigation__link",
-  "major-hero__acquaintance"
+  "navigation",
+  "acquaintance"
 ];
 
 export const initRemoveClassNojs = () => {

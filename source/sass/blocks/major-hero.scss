@@ -7,23 +7,42 @@
     position: absolute;
     z-index: -1;
     height: 100vh;
-    width: 65%;
+    width: 100vw;
     top: 0;
-    left: 35%;
-    background: url("../../img/DejanHome.png") no-repeat center / cover;
+    left: 0;
+    background: url("../../img/my-photo-bg@1x.jpg") no-repeat center/ auto 100vh;
+
+    @include resolution {
+      background-image: url("../../img/my-photo-bg@2x.jpg");
+    }
+
+    @include tablet {
+      background-position: center right -30vw;
+    }
+
+    @include laptop {
+      background-position: center right calc((100vw - $laptop-max) / 2);
+    }
+
+    @include desktop {
+      background-position: center right calc((100vw - $desktop) / 4);
+    }
   }
 
   &::after {
     @include bounce;
-    content: "Tap anywhere";
+    content: "";
     position: absolute;
     z-index: 1;
-    width: 100%;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     bottom: 4%;
-    left: 0;
-    font-size: 0.7em;
-    text-align: center;
+    left: calc(50% - 25px);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $white;
+    mask-image: url("../../img/icons/stack.svg#touch");
 
     @include laptop {
       display: none;
@@ -38,39 +57,4 @@
   flex-direction: column;
   justify-content: center;
   gap: 6vh;
-}
-
-.major-hero__acquaintance {
-  margin: 0;
-  display: block;
-
-  @include laptop {
-    display: none;
-  }
-
-  &--nojs {
-    display: block;
-  }
-}
-
-.major-hero__navigation {
-  display: none;
-
-  @include laptop {
-    display: block;
-  }
-
-  // &--active {
-  //   display: block;
-
-  //   a {
-  //     span {
-  //       display: block;
-  //     }
-
-  //     &::after {
-  //       display: none;
-  //     }
-  //   }
-  // }
 }
