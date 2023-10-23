@@ -67,6 +67,10 @@
   color: $red-10;
   display: flex;
 
+  @include tablet {
+    width: 50%;
+  }
+
   &--white {
     color: $white;
   }

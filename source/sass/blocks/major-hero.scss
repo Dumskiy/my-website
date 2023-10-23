@@ -1,5 +1,6 @@
 .major-hero {
   position: relative;
+  overflow: hidden;
 
   &::before {
     @include scale;
@@ -10,10 +11,18 @@
     width: 100vw;
     top: 0;
     left: 0;
-    background: url("../../img/my-photo-bg@1x.jpg") no-repeat center/ auto 100vh;
+    background: url("../../img/my-photo-bg@1x.jpg") no-repeat center / auto 100vh;
 
     @include resolution {
       background-image: url("../../img/my-photo-bg@2x.jpg");
+    }
+
+    @media (max-width: 767px) {
+      width: 200vw;
+    }
+
+    @media (min-width: 500px) and (max-width: 767px) {
+      background-position: center left 7vw;
     }
 
     @include tablet {
@@ -36,7 +45,7 @@
     z-index: 1;
     width: 50px;
     height: 50px;
-    bottom: 4%;
+    bottom: 15%;
     left: calc(50% - 25px);
 
     background-position: center;

@@ -6,7 +6,7 @@ const ELEMENTS = [
   "navigation"
 ];
 
-const switchBloks = () => {
+const switchBlock = () => {
   ELEMENTS.forEach(element => {
     const currentElements = elementTap.querySelector(`.${element}`);
     if (currentElements.classList.contains(`${element}--show`)) {
@@ -21,5 +21,5 @@ const switchBloks = () => {
 
 
 if (document.documentElement.clientWidth < 1024) {
-  elementTap.addEventListener('click', switchBloks);
+  elementTap.addEventListener('click', switchBlock);
 }
