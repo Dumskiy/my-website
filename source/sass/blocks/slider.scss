@@ -1,36 +1,39 @@
-.slider__image {
-  max-width: 100%;
-  height: auto;
-  max-height: 90vh;
-  object-fit: contain;
-}
+.slider {
 
-.slider__button {
-  width: fit-content;
-
-  &--prev {
-    left: -7%;
+  &__image {
+    max-width: 100%;
+    height: auto;
+    max-height: 90vh;
+    object-fit: contain;
   }
 
-  &--next {
-    right: -7%;
-  }
-
-  @include laptop {
-    width: 15%;
+  &__button {
+    width: fit-content;
 
     &--prev {
-      left: -10%;
+      left: -7%;
     }
 
     &--next {
-      right: -10%;
+      right: -7%;
+    }
+
+    @include laptop {
+      width: 15%;
+
+      &--prev {
+        left: -10%;
+      }
+
+      &--next {
+        right: -10%;
+      }
     }
   }
-}
 
-.slider__indicators {
-  [data-bs-target] {
-    background-color: $black;
+  &__indicators {
+    [data-bs-target] {
+      background-color: $black;
+    }
   }
 }

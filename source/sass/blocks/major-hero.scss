@@ -57,13 +57,13 @@
       display: none;
     }
   }
-}
 
-.major-hero__container {
-  @include container;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 6vh;
+  &__container {
+    @include container;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6vh;
+  }
 }

@@ -22,27 +22,27 @@
       display: none;
     }
   }
-}
 
-.acquaintance__text {
-  overflow: hidden;
-  color: $red-10;
+  &__text {
+    overflow: hidden;
+    color: $red-10;
 
-  &--white {
-    color: $white;
-  }
+    &--white {
+      color: $white;
+    }
 
-  span {
-    @include float-up;
-    display: block;
+    span {
+      @include float-up;
+      display: block;
 
-  }
+    }
 
-  &:nth-child(2) span {
-    animation-delay: .4s;
-  }
+    &:nth-child(2) span {
+      animation-delay: .4s;
+    }
 
-  &:nth-child(3) span {
-    animation-delay: .8s;
+    &:nth-child(3) span {
+      animation-delay: .8s;
+    }
   }
 }

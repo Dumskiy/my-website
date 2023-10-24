@@ -1,26 +1,29 @@
-.about__text {
-  font-size: 18px;
-  line-height: 170%;
-  margin: 0 0 3vh;
+.about {
 
-  &--large {
-    font-size: 24px;
-    line-height: 160%;
-    margin: 0 0 4vh;
+  &__text {
+    font-size: 18px;
+    line-height: 170%;
+    margin: 0 0 3vh;
 
+    &--large {
+      font-size: 24px;
+      line-height: 160%;
+      margin: 0 0 4vh;
+
+    }
   }
-}
 
-.about__resume {
-  text-decoration: none;
-  color: $red-10;
-  font-size: 19px;
-  line-height: 19px;
-  display: block;
+  &__resume {
+    text-decoration: none;
+    color: $red-10;
+    font-size: 19px;
+    line-height: 19px;
+    display: block;
 
-  &:hover,
-  &:focus {
-    transform: translateX(40px);
-    transition: all .5s;
+    &:hover,
+    &:focus {
+      transform: translateX(40px);
+      transition: all .5s;
+    }
   }
 }

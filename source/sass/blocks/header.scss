@@ -3,120 +3,120 @@
   top: 0;
   background-color: transparent;
   width: 100%;
-}
 
-.header__container {
-  @include container;
-  padding: 7% 0;
-}
-
-.header__navigation {
-  width: max-content;
-  margin: 0 -5% 0 auto;
-
-
-  @include laptop {
-    margin-right: -13%;
-  }
-}
-
-.header__link {
-  @include float-up;
-  display: flex;
-  column-gap: 10px;
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 700;
-  color: $white;
-  text-decoration: none;
-  text-transform: lowercase;
-
-  &::after {
-    content: "";
-    width: 20px;
-    height: 20px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-color: $white;
-    mask-image: url("../../img/icons/stack.svg#arrow-back");
+  &__container {
+    @include container;
+    padding: 7% 0;
   }
 
-  &::before {
-    display: none;
+  &__navigation {
+    width: max-content;
+    margin: 0 -5% 0 auto;
+
+
+    @include laptop {
+      margin-right: -13%;
+    }
   }
 
-  @include laptop {
-    display: block;
+  &__link {
+    @include float-up;
+    display: flex;
+    column-gap: 10px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    color: $white;
+    text-decoration: none;
+    text-transform: lowercase;
 
-    &::before {
-      display: block;
+    &::after {
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-color: $white;
+      mask-image: url("../../img/icons/stack.svg#arrow-back");
     }
 
-    span {
+    &::before {
       display: none;
     }
 
-    &:hover,
-    &:focus {
-      display: flex;
+    @include laptop {
+      display: block;
 
       &::before {
-        display: none;
+        display: block;
       }
 
       span {
-        display: block;
+        display: none;
+      }
+
+      &:hover,
+      &:focus {
+        display: flex;
+
+        &::before {
+          display: none;
+        }
+
+        span {
+          display: block;
+        }
       }
     }
-  }
 
-  &--black {
-    color: $black;
+    &--black {
+      color: $black;
 
-    &::after {
-      background-color: $black;
+      &::after {
+        background-color: $black;
+      }
     }
-  }
 
-  &--contacts {
-    &::before {
-      content: "Контакты";
+    &--contacts {
+      &::before {
+        content: "Контакты";
+      }
     }
-  }
 
-  &--about {
-    &::before {
-      content: "Обо мне";
+    &--about {
+      &::before {
+        content: "Обо мне";
+      }
     }
-  }
 
-  &--projects {
-    &::before {
-      content: "Проекты";
+    &--projects {
+      &::before {
+        content: "Проекты";
+      }
     }
-  }
 
-  &--cat-energy {
-    &::before {
-      content: "Cat Energy";
+    &--cat-energy {
+      &::before {
+        content: "Cat Energy";
+      }
     }
-  }
 
-  &--kekstagram {
-    &::before {
-      content: "Kekstagram";
+    &--kekstagram {
+      &::before {
+        content: "Kekstagram";
+      }
     }
-  }
 
-  &--drink2go {
-    &::before {
-      content: "Drink2Go";
+    &--drink2go {
+      &::before {
+        content: "Drink2Go";
+      }
     }
-  }
 
-  &--sedona {
-    &::before {
-      content: "Sedona";
+    &--sedona {
+      &::before {
+        content: "Sedona";
+      }
     }
   }
 }

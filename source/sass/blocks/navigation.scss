@@ -43,76 +43,76 @@
       display: none;
     }
   }
-}
 
-.navigation__list {
-  @include clear-list;
-}
-
-.navigation__item {
-  overflow: hidden;
-
-  &:nth-child(2) a {
-    animation-delay: .4s;
+  &__list {
+    @include clear-list;
   }
 
-  &:nth-child(3) a {
-    animation-delay: .8s;
-  }
-}
+  &__item {
+    overflow: hidden;
 
-.navigation__link {
-  @include float-up;
-  text-decoration: none;
-  color: $red-10;
-  display: flex;
+    &:nth-child(2) a {
+      animation-delay: .4s;
+    }
 
-  @include tablet {
-    width: 50%;
-  }
-
-  &--white {
-    color: $white;
-  }
-
-  &::after {
-    width: 100%;
-    height: 100%;
-  }
-
-  &--about {
-    &::after {
-      content: "Привет.";
+    &:nth-child(3) a {
+      animation-delay: .8s;
     }
   }
 
-  &--projects {
-    &::after {
-      content: "Я";
+  &__link {
+    @include float-up;
+    text-decoration: none;
+    color: $red-10;
+    display: flex;
+
+    @include tablet {
+      width: 50%;
     }
-  }
 
-  &--contacts {
-    &::after {
-      content: "Андрей";
+    &--white {
+      color: $white;
     }
-  }
 
-  span {
-    display: none;
-  }
+    &::after {
+      width: 100%;
+      height: 100%;
+    }
 
-  &:hover,
-  &:focus {
-    transform: translateX(40px);
-    transition: all .5s;
+    &--about {
+      &::after {
+        content: "Привет.";
+      }
+    }
+
+    &--projects {
+      &::after {
+        content: "Я";
+      }
+    }
+
+    &--contacts {
+      &::after {
+        content: "Андрей";
+      }
+    }
 
     span {
-      display: block;
+      display: none;
     }
 
-    &::after {
-      display: none;
+    &:hover,
+    &:focus {
+      transform: translateX(40px);
+      transition: all .5s;
+
+      span {
+        display: block;
+      }
+
+      &::after {
+        display: none;
+      }
     }
   }
 }

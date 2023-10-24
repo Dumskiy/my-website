@@ -1,4 +1,7 @@
-.main__container {
-  @include container;
-  padding: 35vh 0 30vh;
+.main {
+
+  &__container {
+    @include container;
+    padding: 35vh 0 30vh;
+  }
 }
