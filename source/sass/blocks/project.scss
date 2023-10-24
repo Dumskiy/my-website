@@ -10,7 +10,7 @@
     font-size: 40px;
     line-height: 140%;
     font-weight: 700;
-    margin: 0 0 3vh;
+    margin: 6vh 0 2vh;
     display: block;
 
     @include mobile-only {
@@ -27,6 +27,18 @@
 
     @include mobile-only {
       font-size: 25px;
+    }
+  }
+
+  &__heading {
+    font-size: 30px;
+    line-height: 120%;
+    font-weight: 700;
+    margin: 4vh 0 2vh;
+    display: block;
+
+    @include mobile-only {
+      font-size: 20px;
     }
   }
 
@@ -72,6 +84,14 @@
 
     &--s {
       max-width: 100%;
+    }
+
+    &--m {
+      max-width: 100%;
+
+      @include laptop {
+        max-width: 70%;
+      }
     }
 
     &--xl {

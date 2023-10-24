@@ -37,24 +37,129 @@
             </div>
           </div>
         </section>
-        <section class="project content">
-          <div class="project__container content__container">
-            <h2 class="project__title content__title">О проекте</h2>
+        <section class="project">
+          <div class="project__container">
+            <h2 class="project__title">О проекте</h2>
             <p class="project__description">
               Kekstagram — это сервис для обмена фотографиями. Пользователям предоставлена возможность загружать свои фотографии, которые можно редактировать с помощью фильтров и организовывать с помощью хештегов. Пользователи могут просматривать контент других пользователей, ставить лайки и оставлять комментарии.
             </p>
             <a class="project__link project__link--site" href="https://dumskiy.github.io/sites/kekstagram/">Сайт Kekstagram</a>
             <a class="project__link project__link--github" href="https://github.com/Dumskiy/2349525-kekstagram-1">Репозиторий на GitHub</a>
+            <h2 class="project__title">Техническая реализация</h2>
+            <h3 class="project__subtitle">Общая информация</h3>
+            <p class="project__text">
+              Kekstagram представляет собой одностраничный сайт, адаптированный под любое разрешение экрана устройства пользователя.
+            </p>
+            <p class="project__text">
+              <strong>Стек:</strong> HTML5, CSS3, JavaScript(ESM), Pristine, noUiSlider, БЭМ, Sass, Gulp.
+            </p>
+            <picture>
+              <source type="image/webp"
+                srcset="../img/kekstagram-devices@1x.webp 1x, ../img/kekstagram-devices@2x.webp 2x">
+              <img class="project__image project__image--xl project__image--nojs" src="../img/kekstagram-devices@1x.png"
+                srcset="../img/kekstagram-devices@2x.png 2x" width="1440" height="1224" loading="lazy" alt="Главная страница Кэт Энерджи на трех устройствах. Смартфон, планшет, компьютер.">
+            </picture>
+            <h3 class="project__subtitle">Загрузка нового изображения на сайт</h3>
+            <h4 class="project__heading">Выбор изображения</h4>
+            <p class="project__text">
+              Выбор изображения для загрузки осуществляется с помощью стандартного контрола загрузки файла, который стилизован под букву «О» в логотипе. После выбора изображения, отображается форма редактирования изображения.
+            </p>
+            <picture>
+              <source type="image/webp"
+                srcset="../img/kekstagram-picture-default@1x.webp 1x, ../img/kekstagram-picture-default@2x.webp 2x">
+              <img class="project__image project__image--m" src="../img/kekstagram-picture-default@1x.png"
+                srcset="../img/kekstagram-picture-default@2x.png 2x" width="840" height="1090" loading="lazy" alt="Статичное мобильное меню на сайте Кэт Энерджи в открытом виде.">
+            </picture>
+            <h4 class="project__heading">Изменение масштаба</h4>
+            <p class="project__text">
+              Изменение масштаба изображения происходит после нажатия на кнопки «-» и «+» с шагом в 25%. Максимальное значение - 100%, минимальное - 25%. Значение по умолчанию - 100%.
+            </p>
+            <picture>
+              <source type="image/webp"
+                srcset="../img/kekstagram-picture-scale@1x.webp 1x, ../img/kekstagram-picture-scale@2x.webp 2x">
+              <img class="project__image project__image--m" src="../img/kekstagram-picture-scale@1x.png"
+                srcset="../img/kekstagram-picture-scale@2x.png 2x" width="840" height="1090" loading="lazy" alt="Статичное мобильное меню на сайте Кэт Энерджи в открытом виде.">
+            </picture>
+            <h4 class="project__heading">Наложение эффекта</h4>
+            <p class="project__text">
+              На изображение может накладываться один из эффектов: Хром, Сепия, Марвин, Фобос, Зной.
+            </p>
+            <picture>
+              <source type="image/webp"
+                srcset="../img/kekstagram-picture-filter-max@1x.webp 1x, ../img/kekstagram-picture-filter-max@2x.webp 2x">
+              <img class="project__image project__image--m" src="../img/kekstagram-picture-filter-max@1x.png"
+                srcset="../img/kekstagram-picture-filter-max@2x.png 2x" width="840" height="1090" loading="lazy" alt="Статичное мобильное меню на сайте Кэт Энерджи в открытом виде.">
+            </picture>
+            <p class="project__text">
+              Интенсивность эффекта регулируется перемещением ползунка в range слайдере. Слайдер реализован сторонней библиотекой noUiSlider.
+            </p>
+            <picture>
+              <source type="image/webp"
+                srcset="../img/kekstagram-picture-filter-min@1x.webp 1x, ../img/kekstagram-picture-filter-min@2x.webp 2x">
+              <img class="project__image project__image--m" src="../img/kekstagram-picture-filter-min@1x.png"
+                srcset="../img/kekstagram-picture-filter-min@2x.png 2x" width="840" height="1090" loading="lazy" alt="Статичное мобильное меню на сайте Кэт Энерджи в открытом виде.">
+            </picture>
+            <h4 class="project__heading">Валидация формы</h4>
+            <p class="project__text">
+              Для полей «ХэшТег» и «Комментарий» предусмотрена валидация перед отправкой на сервер и, непосредственно, в момент заполнения. Значение поля проходит проверку на соответствие установленному правилу (регулярному выражению). В случае некорректного заполнения поля, в интерфейсе отображается текст ошибки. Валидация формы реализована сторонней библиотекой Pristine.
+            </p>
+            <picture>
+              <source type="image/webp"
+                srcset="../img/kekstagram-picture-form-invalid@1x.webp 1x, ../img/kekstagram-picture-form-invalid@2x.webp 2x">
+              <img class="project__image project__image--m" src="../img/kekstagram-picture-form-invalid@1x.png"
+                srcset="../img/kekstagram-picture-form-invalid@2x.png 2x" width="840" height="1090" loading="lazy" alt="Статичное мобильное меню на сайте Кэт Энерджи в открытом виде.">
+            </picture>
+            <h4 class="project__heading">Отправка данных на сервер</h4>
+            <p class="project__text">
+              После заполнения всех данных, при нажатии на кнопку «Опубликовать», все данные из формы, включая изображения, с помощью AJAX-запроса отправляются на сервер. На время выполнения запроса к серверу кнопка блокируется.
+            </p>
+            <p class="project__text">
+              В случае успешной отправки данных на сервер, форма редактирования изображения закрывается, и отображается соответствующее сообщение. Все данные, введённые в форму, и контрол фильтра приходят в исходное состояние:<br>
+              - масштаб возвращается к 100%;<br>
+              - эффект сбрасывается на «Оригинал»;<br>
+              - поля для ввода хэш-тегов и комментария очищаются;<br>
+              - поле загрузки фотографии, стилизованное под букву «О» в логотипе, очищается.
+            </p>
+            <p class="project__text">
+              Если при отправке данных произошла ошибка запроса, тогда отображается соответствующее сообщение об ошибке. Вся введённая пользователем информация сохраняется, для возможности повторной отправки формы.
+            </p>
+            <h3 class="project__subtitle">Сортировка загруженных изображений</h3>
+            <p class="project__text">
+              Загрузка изображений от других пользователей производится с удалённого сервера сразу после открытия страницы. Все загруженные изображения показаны на странице в виде миниатюр.
+            </p>
+            <picture>
+              <source type="image/webp"
+                srcset="../img/kekstagram-index-rotate@1x.webp 1x, ../img/kekstagram-index-rotate@2x.webp 2x">
+              <img class="project__image project__image--s" src="../img/kekstagram-index-rotate@1x.png"
+                srcset="../img/kekstagram-index-rotate@2x.png 2x" width="1090" height="840" loading="lazy" alt="Статичное мобильное меню на сайте Кэт Энерджи в открытом виде.">
+            </picture>
+            <p class="project__text">
+              После получения данных от сервера, на странице отображается блок для сортировки изображений.
+            </p>
+            <p class="project__text">
+              Доступные сортировки:<br>
+              «По умолчанию» — фотографии в изначальном порядке с сервера;<br>
+              «Случайные» — 10 случайных, не повторяющихся фотографий;<br>
+              «Обсуждаемые» — фотографии, отсортированные в порядке убывания количества комментариев.
+            </p>
+            <p class="project__text">
+              При изменении сортировки, в целях устранения дребезга, отрисовка изображений, производится не чаще, чем один раз 500 мс.
+            </p>
+            <h3 class="project__subtitle">Просмотр изображений</h3>
+            <p class="project__text">
+              При нажатии на любую из миниатюр, показывается блок, содержащий полноэкранное изображение с количеством лайков и комментариев.
+            </p>
+            <picture>
+              <source type="image/webp"
+                srcset="../img/kekstagram-show-picture@1x.webp 1x, ../img/kekstagram-show-picture@2x.webp 2x">
+              <img class="project__image project__image--s" src="../img/kekstagram-show-picture@1x.png"
+                srcset="../img/kekstagram-show-picture@2x.png 2x" width="840" height="1090" loading="lazy" alt="Статичное мобильное меню на сайте Кэт Энерджи в открытом виде.">
+            </picture>
+            <p class="project__text">
+              Максимальное количество отображаемых комментариев по умолчанию равно пяти. При нажатии на кнопку «Загрузить еще» отображается не более пяти новых комментариев. Если все комментарии показаны, кнопка скрывается.
+            </p>
           </div>
         </section>
-        <section class="technologies content">
-          <div class="technologies__container content__container">
-            <h2 class="technologies__title content__title">Технические особенности</h2>
-
-
-          </div>
-        </section>
-
       </div>
     </main>
   </body>
