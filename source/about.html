@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrey Dumskiy</title>
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicon/favicon-apple.png">
+    <link rel="icon" href="img/logo/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/logo/favicon/favicon-apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/roboto-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -37,9 +41,9 @@
             </div>
           </div>
         </section>
-        <section class="about content">
-          <div class="about__container content__container">
-            <n2 class="about__title content__title">Обо мне</n2>
+        <section class="about">
+          <div class="about__container">
+            <h2 class="about__title">Обо мне</h2>
             <p class="about__text about__text--large">
               Привет! Меня зовут Андрей Думский.
             </p>
@@ -68,6 +72,141 @@
               Вы также можете ознакомиться с моим резюме в PDF-файле, прикрепленном ниже:
             </p>
             <a class="about__resume" href="files/andrey-dumskiy-resume.pdf" target="_blank">Моё резюме (pdf 94kb)</a>
+          </div>
+        </section>
+        <section class="skills">
+          <div class="skills__container">
+            <h2 class="skills__title">Мои навыки</h2>
+            <p class="skills__text skills__text--large">
+              Что включают в себя мои навыки программирования?
+            </p>
+            <p class="skills__text">
+              Я разрабатываю простой, интуитивно понятный и отзывчивый интерфейс с помощью этих технологий:
+            </p>
+            <ul class="skills__list">
+              <li class="skills__item">
+                <span class="visually-hidden">HTML5</span>
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/logo/html-logo@1x.webp 1x, img/logo/html-logo@2x.webp 2x">
+                  <img class="skills__image" src="img/logo/html-logo@1x.png"
+                    srcset="img/logo/html-logo@2x.png 2x" width="85" height="85" alt="Логотип HTML5.">
+                </picture>
+              </li>
+              <li class="skills__item">
+                <span class="visually-hidden">CSS3</span>
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/logo/css-logo@1x.webp 1x, img/logo/css-logo@2x.webp 2x">
+                  <img class="skills__image" src="img/logo/css-logo@1x.png"
+                    srcset="img/logo/css-logo@2x.png 2x" width="85" height="85" alt="Логотип CSS3.">
+                </picture>
+              </li>
+              <li class="skills__item">
+                <span class="visually-hidden">JavaScript</span>
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/logo/javascript-logo@1x.webp 1x, img/logo/javascript-logo@2x.webp 2x">
+                  <img class="skills__image" src="img/logo/javascript-logo@1x.png"
+                    srcset="img/logo/javascript-logo@2x.png 2x" width="85" height="85" alt="Логотип JavaScript.">
+                </picture>
+              </li>
+              <li class="skills__item">
+                <span class="visually-hidden">React</span>
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/logo/react-logo@1x.webp 1x, img/logo/react-logo@2x.webp 2x">
+                  <img class="skills__image" src="img/logo/react-logo@1x.png"
+                    srcset="img/logo/react-logo@2x.png 2x" width="85" height="85" alt="Логотип React.">
+                </picture>
+              </li>
+              <li class="skills__item">
+                <span class="visually-hidden">Bootstrap</span>
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/logo/bootstrap-logo@1x.webp 1x, img/logo/bootstrap-logo@2x.webp 2x">
+                  <img class="skills__image" src="img/logo/bootstrap-logo@1x.png"
+                    srcset="img/logo/bootstrap-logo@2x.png 2x" width="85" height="85" alt="Логотип Bootstrap.">
+                </picture>
+              </li>
+              <li class="skills__item">
+                <span class="visually-hidden">Sass</span>
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/logo/sass-logo@1x.webp 1x, img/logo/sass-logo@2x.webp 2x">
+                  <img class="skills__image" src="img/logo/sass-logo@1x.png"
+                    srcset="img/logo/sass-logo@2x.png 2x" width="85" height="85" alt="Логотип Sass.">
+                </picture>
+              </li>
+              <li class="skills__item">
+                <span class="visually-hidden">Less</span>
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/logo/less-logo@1x.webp 1x, img/logo/less-logo@2x.webp 2x">
+                  <img class="skills__image" src="img/logo/less-logo@1x.png"
+                    srcset="img/logo/less-logo@2x.png 2x" width="85" height="85" alt="Логотип Less.">
+                </picture>
+              </li>
+            </ul>
+            <p class="skills__text">
+              И этих инструментов:
+            </p>
+            <ul class="skills__list">
+              <li class="skills__item">
+                <span class="visually-hidden">Gulp</span>
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/logo/gulp-logo@1x.webp 1x, img/logo/gulp-logo@2x.webp 2x">
+                  <img class="skills__image" src="img/logo/gulp-logo@1x.png"
+                    srcset="img/logo/gulp-logo@2x.png 2x" width="85" height="85" alt="Логотип Gulp.">
+                </picture>
+              </li>
+              <li class="skills__item">
+                <span class="visually-hidden">Photoshop</span>
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/logo/photoshop-logo@1x.webp 1x, img/logo/photoshop-logo@2x.webp 2x">
+                  <img class="skills__image" src="img/logo/photoshop-logo@1x.png"
+                    srcset="img/logo/photoshop-logo@2x.png 2x" width="85" height="85" alt="Логотип Photoshop.">
+                </picture>
+              </li>
+              <li class="skills__item">
+                <span class="visually-hidden">Git</span>
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/logo/git-logo@1x.webp 1x, img/logo/git-logo@2x.webp 2x">
+                  <img class="skills__image" src="img/logo/git-logo@1x.png"
+                    srcset="img/logo/git-logo@2x.png 2x" width="85" height="85" alt="Логотип Git.">
+                </picture>
+              </li>
+              <li class="skills__item">
+                <span class="visually-hidden">Figma</span>
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/logo/figma-logo@1x.webp 1x, img/logo/figma-logo@2x.webp 2x">
+                  <img class="skills__image" src="img/logo/figma-logo@1x.png"
+                    srcset="img/logo/figma-logo@2x.png 2x" width="85" height="85" alt="Логотип Figma.">
+                </picture>
+              </li>
+              <li class="skills__item">
+                <span class="visually-hidden">Visual Studio Code</span>
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/logo/vscode-logo@1x.webp 1x, img/logo/vscode-logo@2x.webp 2x">
+                  <img class="skills__image" src="img/logo/vscode-logo@1x.png"
+                    srcset="img/logo/vscode-logo@2x.png 2x" width="85" height="85" alt="Логотип Visual Studio Code.">
+                </picture>
+              </li>
+              <li class="skills__item">
+                <span class="visually-hidden">Node Package Manager</span>
+                <picture>
+                  <source type="image/webp"
+                    srcset="img/logo/npm-logo@1x.webp 1x, img/logo/npm-logo@2x.webp 2x">
+                  <img class="skills__image" src="img/logo/npm-logo@1x.png"
+                    srcset="img/logo/npm-logo@2x.png 2x" width="85" height="85" alt="Логотип Node Package Manager.">
+                </picture>
+              </li>
+            </ul>
           </div>
         </section>
       </div>

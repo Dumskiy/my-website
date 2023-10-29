@@ -8,6 +8,10 @@
     <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/favicon-apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/roboto-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -24,12 +28,16 @@
       <div class="main__container">
         <section class="hero">
           <div class="hero__container">
-            <h1 class="hero__title">Давайте создавать невероятное вместе!</h1>
+            <h1 class="hero__title">
+              <span>Давайте создавать невероятное вместе!</span>
+            </h1>
           </div>
         </section>
-        <section class="contacts content">
-          <div class="contacts__container content__container">
-            <h2 class="contacts__title content__title">Контакты</h2>
+        <section class="contacts">
+          <div class="contacts__container">
+            <h2 class="contacts__title">
+              <span>Контакты</span>
+            </h2>
             <ul class="contacts__list">
               <li class="contacts__item">
                 <address class="contacts__link contacts__link--address">г. Санкт-Петербург</address>
@@ -39,6 +47,9 @@
               </li>
               <li class="contacts__item">
                 <a class="contacts__link contacts__link--mail" href="mailto:dumskiy-25@mail.ru">dumskiy-25@mail.ru</a>
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link contacts__link--github" href="https://github.com/Dumskiy" target="_blank">github.com/Dumskiy</a>
               </li>
               <li class="contacts__item">
                 <a class="contacts__link contacts__link--telegram" href="https://t.me/andrey_dumskiy" target="_blank">@andrey_dumskiy</a>

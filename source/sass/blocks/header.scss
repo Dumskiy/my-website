@@ -1,21 +1,17 @@
 .header {
-  position: fixed;
-  top: 0;
-  background-color: transparent;
-  width: 100%;
-
-  &__container {
-    @include container;
-    padding: 7% 0;
-  }
 
   &__navigation {
     width: max-content;
-    margin: 0 -5% 0 auto;
-
+    position: fixed;
+    top: 10vh;
+    right: 2vw;
 
     @include laptop {
-      margin-right: -13%;
+      right: calc((100vw - 21.5em) / 8);
+    }
+
+    @include desktop {
+      right: calc((100vw - 21.5em) / 4);
     }
   }
 

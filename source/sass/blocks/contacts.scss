@@ -1,5 +1,29 @@
 .contacts {
 
+  &__container {
+    @include tablet {
+      padding: 0 15%;
+    }
+  }
+
+  &__title {
+    font-size: 40px;
+    line-height: 140%;
+    font-weight: 700;
+    margin: 0 0 4vh;
+    display: block;
+    overflow: hidden;
+
+    @include mobile-only {
+      font-size: 30px;
+    }
+
+    span {
+      display: block;
+      @include float-up;
+    }
+  }
+
   &__list {
     @include clear-list;
     display: grid;
@@ -53,6 +77,12 @@
     &--telegram {
       &::before {
         mask-image: url("../../img/icons/stack.svg#telegram");
+      }
+    }
+
+    &--github {
+      &::before {
+        mask-image: url("../../img/icons/stack.svg#github");
       }
     }
   }

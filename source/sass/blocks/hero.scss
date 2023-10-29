@@ -9,6 +9,7 @@
     line-height: 140%;
     font-weight: 700;
     margin: 0;
+    overflow: hidden;
 
     @include mobile-only {
       font-size: 2em;

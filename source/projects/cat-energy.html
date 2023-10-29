@@ -8,6 +8,11 @@
     <link rel="icon" href="../img/favicon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="../img/favicon/favicon-apple.png">
     <link rel="manifest" href="../manifest.webmanifest">
+    <link rel="preload" href="../fonts/roboto-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/roboto-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/roboto-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="../vendor/bootstrap/bootstrap.min.css" as="style">
+    <link rel="preload" href="../css/style.css" as="style">
     <link rel="stylesheet" href="../vendor/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
   </head>
@@ -184,7 +189,7 @@
               Векторные изображения на странице объединены в спрайт.
             </p>
             <p class="project__text">
-              Реализована предзагрузка шрифтов.
+              Реализована предзагрузка шрифтов и ленивая загрузка изображений.
             </p>
             <h3 class="project__subtitle">Кроссбраузерность</h3>
             <p class="project__text">

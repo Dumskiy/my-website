@@ -8,6 +8,10 @@
     <link rel="icon" href="../img/favicon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="../img/favicon/favicon-apple.png">
     <link rel="manifest" href="../manifest.webmanifest">
+    <link rel="preload" href="../fonts/roboto-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/roboto-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="../fonts/roboto-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="../css/style.css" as="style">
     <link rel="stylesheet" href="../vendor/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
   </head>
@@ -45,9 +49,72 @@
             </p>
             <a class="project__link project__link--site" href="https://dumskiy.github.io/sites/sedona/" target="_blank">Сайт Sedona</a>
             <a class="project__link project__link--github" href="https://github.com/Dumskiy/html1-sedona-dumskiy" target="_blank">Репозиторий на GitHub</a>
+            <h2 class="project__title">Техническая реализация</h2>
+            <h3 class="project__subtitle">Общая информация</h3>
+            <p class="project__text">
+              Проект представляет собой совокупность главной страницы и страницы каталога жилья.
+            </p>
+            <div class="project__slider project__slider--nojs slider carousel slide" id="carouselExampleIndicators" data-bs-ride="true">
+              <div class="slider__indicators carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              </div>
+              <div class="slider__inner carousel-inner">
+                <div class="slider__item carousel-item active">
+                  <picture>
+                    <source type="image/webp"
+                      srcset="../img/sedona-devices-index@1x.webp 1x, ../img/sedona-devices-index@2x.webp 2x">
+                    <img class="slider__image d-block w-100" src="../img/sedona-devices-index@1x.png"
+                      srcset="../img/sedona-devices-index@2x.png 2x" width="1440" height="833" loading="lazy" alt="Главная страница сайта Седона на компьютере.">
+                  </picture>
+                </div>
+                <div class="slider__item carousel-item">
+                  <picture>
+                    <source type="image/webp"
+                      srcset="../img/sedona-devices-catalog@1x.webp 1x, ../img/sedona-devices-catalog@2x.webp 2x">
+                    <img class="slider__image d-block w-100" src="../img/sedona-devices-catalog@1x.png"
+                      srcset="../img/sedona-devices-catalog@2x.png 2x" width="1440" height="833" loading="lazy" alt="Страница каталога сайта Седона на компьютере.">
+                  </picture>
+                </div>
+              </div>
+              <button class="slider__button slider__button--prev carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="slider__button slider__button--next carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <picture>
+              <source type="image/webp"
+                srcset="../img/sedona-devices-index@1x.webp 1x, ../img/sedona-devices-index@2x.webp 2x">
+              <img class="project__image project__image--xl project__image--nojs" src="../img/sedona-devices-index@1x.png"
+                srcset="../img/sedona-devices-index@2x.png 2x" width="1440" height="833" loading="lazy" alt="Главная страница сайта Седона на компьютере.">
+            </picture>
+            <picture>
+              <source type="image/webp"
+                srcset="../img/sedona-devices-catalog@1x.webp 1x, ../img/sedona-devices-catalog@2x.webp 2x">
+              <img class="project__image project__image--xl project__image--nojs" src="../img/sedona-devices-catalog@1x.png"
+                srcset="../img/sedona-devices-catalog@2x.png 2x" width="1440" height="833" loading="lazy" alt="Страница каталога сайта Седона на компьютере.">
+            </picture>
+            <h3 class="project__subtitle">Разметка и Стилизация</h3>
+            <p class="project__text">
+              Семантическая разметка страниц выполнена на HTML5 и отвечает критериям валидности и доступности. Стилизация страниц выполнена на CSS3.
+            </p>
+            <h3 class="project__subtitle">Сетки страниц и компонентов</h3>
+            <p class="project__text">
+              Сетки крупных структурных блоков и мелких компонентов построены при помощи Flexbox и Grid Layout и не боятся переполнения контентом.
+            </p>
+            <h3 class="project__subtitle">Кроссбраузерность</h3>
+            <p class="project__text">
+              Все страницы и элементы сайта идентично отображаются в последних версиях браузеров Chrome, Firefox, Safari.
+            </p>
           </div>
         </section>
       </div>
     </main>
+    <script src="../vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js" type="module"></script>
   </body>
 </html>

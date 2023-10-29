@@ -1,0 +1,63 @@
+.skills {
+
+  &__container {
+    @include tablet {
+      padding: 0 15%;
+    }
+  }
+
+  &__title {
+    font-size: 40px;
+    line-height: 140%;
+    font-weight: 700;
+    margin: 0 0 4vh;
+    display: block;
+
+    @include mobile-only {
+      font-size: 30px;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 170%;
+    margin: 0 0 3vh;
+
+    &--large {
+      font-size: 24px;
+      line-height: 160%;
+      margin: 0 0 4vh;
+    }
+  }
+
+  &__list {
+    @include clear-list;
+    margin-bottom: 3vh;
+    gap: 3%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media (min-width: 426px) and (max-width: 767px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include tablet {
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    @include laptop {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    @include desktop {
+      grid-template-columns: repeat(7, 1fr);
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
