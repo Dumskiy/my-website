@@ -14,19 +14,6 @@
   animation-fill-mode:backwards;
 }
 
-@mixin bounce {
-  @keyframes bounce {
-    from {
-      transform: translateY(0px);
-    }
-    to {
-      transform: translateY(-8px);
-    }
-  }
-
-  animation:bounce .5s cubic-bezier(.5, .6, .6, 1) infinite alternate;
-}
-
 @mixin scale {
   @keyframes scale {
     from {
@@ -41,4 +28,17 @@
 
   animation:scale 1.5s cubic-bezier(.5, .6, .6, 1);
   animation-fill-mode:backwards;
+}
+
+@mixin zoom {
+  @keyframes zoom {
+    from {
+      transform: scale(1.2);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  animation:zoom .8s cubic-bezier(.5, .6, .6, 1) infinite alternate;
 }
